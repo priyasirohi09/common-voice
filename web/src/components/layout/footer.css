@@ -28,17 +28,60 @@ footer {
         }
 
         &:hover {
-            opacity: 0.6;
+            /* opacity: 0.6; */
+            color: rgb(23, 6, 170);
+            scale: 1.1;
+            transition: scale 0.3s;
+            font-weight: 500;
+        }
+
+        &::after{
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: rgb(168, 16, 92);
+            transition: width 0.3s;
+            /* transform: translate(5000%); */
+            position: relative;
+            left:25%;
+        }
+
+        &:hover::after {
+            width: 50%;
+            transition: width 0.3s;
         }
     }
 
     & img {
         margin-bottom: var(--standard-margin);
         width: 21px;
+        transition: transform 0.5s ease;
 
         @media (--md-up) {
             width: 26px;
         }
+    }
+
+    /* @keyframes
+    rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    } */
+
+    & img:hover{
+        color: aqua;
+        scale: 1.1;
+        transition: scale 0.3s;
+        transform: rotate(180deg);
+        transition: 0.5s ease;
+        /* animation: rotate 0.01s infinite; */
+        /* border-radius: 50%; */
+        /* background: linear-gradient(90deg, rgba(168, 16, 92, 1) 0%, rgba(23, 6, 170, 1) 100%); */
     }
 
     & .divider {
