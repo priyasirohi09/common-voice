@@ -27,8 +27,24 @@ footer {
             font-size: var(--font-size);
         }
 
+        &::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 0%;
+            background-color: rgb(87, 87, 87);
+            position: relative;
+            bottom: 0px;
+            left: 25%;
+            transition: all 0.2s ease-in;
+        }
+
         &:hover {
             opacity: 0.6;
+
+            &::after{
+                width: 50%;
+            }
         }
     }
 
@@ -48,6 +64,7 @@ footer {
         @media (--md-up) {
             display: block;
         }
+
     }
 }
 
