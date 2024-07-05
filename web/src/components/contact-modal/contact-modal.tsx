@@ -23,15 +23,15 @@ export default function ContactModal({ onRequestClose }: Props) {
       <br />
 
       <Localized id="email-input" attrs={{ label: true }}>
-        <LabeledInput label="Email" name="email" required type="email" />
+        <LabeledInput label="Email" name="email" required type="email" placeholder="Enter Your Email"/>
       </Localized>
 
       <Localized id="contact-form-name" attrs={{ label: true }}>
-        <LabeledInput label="Name" name="name" type="text" />
+        <LabeledInput label="Name" name="name" type="text" placeholder="Enter Your Name" />
       </Localized>
 
       <Localized id="contact-form-message" attrs={{ label: true }}>
-        <LabeledTextArea label="Message" name="message" required rows={6} />
+        <LabeledTextArea label="Message" name="message" required rows={6} placeholder="Enter Your Message"/>
       </Localized>
 
         <div className="actions">

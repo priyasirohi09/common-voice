@@ -70,6 +70,7 @@ const Partner = () => {
               alt="Fair Forward"
               width={350}
               height={135}
+              onClick={() => window.open('https://www.bmz-digital.global/en/overview-of-initiatives/fair-forward/https://fairforward.org/')}
             />
             <img
               src={require('./images/partners/Bill_&_Melinda_Gates_Foundation_logo.jpg')}
@@ -78,6 +79,7 @@ const Partner = () => {
               alt="Bill and Melinda Gates Foundation"
               width={370}
               height={135}
+              onClick={() => window.open('https://www.gatesfoundation.org/')}
             />
             <img
               src={require('./images/partners/giz-logo.jpg')}
@@ -86,6 +88,7 @@ const Partner = () => {
               alt="Deutsche Gesellschaft für Internationale Zusammenarbeit"
               width={370}
               height={135}
+              onClick={() => window.open('https://www.giz.de/en/html/index.html')}
             />
             <img
               src={require('./images/partners/collectivat.jpg')}
@@ -93,16 +96,19 @@ const Partner = () => {
               sizes="(max-width: 600px) 370px, 740px"
               alt="Collectivat"
               className="collectivat-logo"
+              onClick={() => window.open('https://collectivat.cat/en')}
             />
             <img
               src={require('./images/partners/Mak-Logo 1.jpg')}
               alt="Makerere"
               className="makerere-logo"
+              onClick={() => window.open('https://www.mak.ac.ug/')}
             />
             <img
               src={require('./images/partners/nvidia-logo-vert.jpg')}
               alt="Nvidia"
               className="nvidia-logo"
+              onClick={() => window.open('https://www.nvidia.com/en-in/')}
             />
           </div>
         </div>

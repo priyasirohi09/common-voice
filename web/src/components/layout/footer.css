@@ -28,7 +28,10 @@ footer {
         }
 
         &:hover {
-            opacity: 0.6;
+            /* opacity: 0.6; */
+            transition: ease-in-out 0.2s;
+            color: var(--blue);
+            text-decoration: underline;
         }
     }
 
@@ -50,7 +53,6 @@ footer {
         }
     }
 }
-
 #moz-links {
     display: flex;
     flex-direction: column-reverse;
