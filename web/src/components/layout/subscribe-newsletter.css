@@ -101,9 +101,12 @@
     & .labeled-checkbox {
         display: flex;
         justify-content: center;
+        padding: 0;
+        margin: 16px;
+        height: 0;
     }
 
-    & .checkbox-container {
+    .checkbox-container {
         border-color: var(--white);
 
         input {
