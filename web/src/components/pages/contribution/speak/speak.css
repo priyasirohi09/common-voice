@@ -7,6 +7,14 @@
         color: var(--red);
     }
 
+    & .skip{
+        transform: translateY(-200px);
+    }
+
+    & .submit{
+        transform: translateY(-200px);
+    }
+
     .no-sentences-available,
     .no-sentences-for-variants {
         .button {
@@ -107,6 +115,7 @@
     & .button {
         height: 57px;
     }
+    
 
     & .text-button {
         font-size: var(--font-size-xs);

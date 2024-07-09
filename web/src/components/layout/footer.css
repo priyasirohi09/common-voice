@@ -17,20 +17,59 @@ footer {
     }
 
     & a,
-    & button {
-        text-align: center;
-        width: 10rem;
-        font-size: var(--font-size-xs);
-        cursor: pointer;
+& button {
+    text-align: center;
+    width: 10rem;
+    font-size: var(--font-size-xs);
+    cursor: pointer;
 
-        @media (--md-up) {
-            font-size: var(--font-size);
-        }
-
-        &:hover {
-            opacity: 0.6;
-        }
+    @media (--md-up) {
+        font-size: var(--font-size);
     }
+
+    &:hover {
+        color: rgb(21, 21, 114);
+        font-size: 1.1rem;
+        transition: .6s;
+    }
+}
+
+& a {
+    position: relative;
+    text-decoration: none;
+}
+& button {
+    position: relative;
+    text-decoration: none;
+}
+
+& a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust based on desired distance from the text */
+    width: 0;
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: rgb(44, 44, 116); /* Color of the underline */
+    transition: width .6s;
+}
+& button:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust based on desired distance from the text */
+    width: 0;
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: rgb(44, 44, 116); /* Color of the underline */
+    transition: width .6s;
+}
+
+& a:hover:after {
+    width: 100%;
+}
+& button:hover:after {
+    width: 100%;
+}
 
     & img {
         margin-bottom: var(--standard-margin);
@@ -50,6 +89,7 @@ footer {
         }
     }
 }
+
 
 #moz-links {
     display: flex;
