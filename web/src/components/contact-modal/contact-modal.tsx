@@ -27,7 +27,7 @@ export default function ContactModal({ onRequestClose }: Props) {
         </Localized>
 
         <Localized id="contact-form-name" attrs={{ label: true }}>
-          <LabeledInput label="Name" name="name" type="text" />
+          <LabeledInput label="Name" name="name" required type="text" />
         </Localized>
 
         <Localized id="contact-form-message" attrs={{ label: true }}>
