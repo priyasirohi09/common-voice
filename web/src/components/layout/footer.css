@@ -170,7 +170,10 @@ footer {
         order: -1;
 
         @media (--xl-up) {
-            display: none;
+            display: block;
+            position:relative;
+            left: 50%;
+            top: 100px;
         }
     }
 
