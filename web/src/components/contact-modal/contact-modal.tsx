@@ -1,10 +1,10 @@
-import { Localized } from '@fluent/react';
-import * as React from 'react';
-import Modal from '../modal/modal';
-import { Button, LabeledInput, LabeledTextArea } from '../ui/ui';
+import { Localized } from '@fluent/react'
+import * as React from 'react'
+import Modal from '../modal/modal'
+import { Button, LabeledInput, LabeledTextArea } from '../ui/ui'
 
 interface Props {
-  onRequestClose: () => void;
+  onRequestClose: () => void
 }
 
 export default function ContactModal({ onRequestClose }: Props) {
@@ -20,19 +20,19 @@ export default function ContactModal({ onRequestClose }: Props) {
           </Localized>
         </div>
 
-      <br />
+        <br />
 
-      <Localized id="email-input" attrs={{ label: true }}>
-        <LabeledInput label="Email" name="email" required type="email" />
-      </Localized>
+        <Localized id="email-input" attrs={{ label: true }}>
+          <LabeledInput label="Email" name="email" required type="email" />
+        </Localized>
 
-      <Localized id="contact-form-name" attrs={{ label: true }}>
-        <LabeledInput label="Name" name="name" type="text" />
-      </Localized>
+        <Localized id="contact-form-name" attrs={{ label: true }}>
+          <LabeledInput label="Name" name="name" required type="text" />
+        </Localized>
 
-      <Localized id="contact-form-message" attrs={{ label: true }}>
-        <LabeledTextArea label="Message" name="message" required rows={6} />
-      </Localized>
+        <Localized id="contact-form-message" attrs={{ label: true }}>
+          <LabeledTextArea label="Message" name="message" required rows={6} />
+        </Localized>
 
         <div className="actions">
           <Localized id="contact-required">
@@ -45,5 +45,5 @@ export default function ContactModal({ onRequestClose }: Props) {
         </div>
       </form>
     </Modal>
-  );
+  )
 }

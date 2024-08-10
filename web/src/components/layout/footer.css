@@ -30,6 +30,21 @@ footer {
         &:hover {
             opacity: 0.6;
         }
+
+        &::after {
+            content: '';
+            display: block;
+            position: relative;
+            left: 25%;
+            width: 0%;
+            height: 2px;
+            background-color: rgba(0, 0, 0, 0.6);
+            transition: all 0.3s ease-in;
+        }
+
+        &:hover::after {
+            width: 50%;
+        }
     }
 
     & img {
